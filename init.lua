@@ -897,7 +897,14 @@ require('lazy').setup({
       vim.cmd.colorscheme 'tokyonight-night'
     end,
   },
+  -- For `plugins.lua` users.
+  {
+      "OXY2DEV/markview.nvim",
+      lazy = false,
 
+      -- Completion for `blink.cmp`
+      -- dependencies = { "saghen/blink.cmp" },
+  },
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { 
     signs = true, 

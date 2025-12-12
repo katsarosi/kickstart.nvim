@@ -68,9 +68,9 @@ return {
   },
   {
      -- Use your actual path to the repo clone
-    --dir = "~/Projects/NeovimPlugins/jpp_search.nvim",
-    "https://github.com/katsarosi/jpp_search.nvim.git",
-    --name = "jpp-search.nvim",
+    dir = "~/Projects/NeoVimPlugins/jpp_search.nvim/",
+    --"https://github.com/katsarosi/jpp_search.nvim.git",
+    name = "jpp-search.nvim",
     ft = { "json", "jsonc" },
     version = "*",
     opts = {
