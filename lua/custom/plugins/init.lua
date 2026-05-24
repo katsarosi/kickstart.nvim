@@ -39,7 +39,7 @@ return {
       formatters_by_ft = {
         lua              = { "stylua" },
         javascript       = { "prettierd", "prettier", "js_beautify", stop_after_first = true },
-        javascriptreact  = { "prettierd", "prettier", "js_beautify", stop_after_first = true },
+        avascriptreact  = { "prettierd", "prettier", "js_beautify", stop_after_first = true },
         json             = { "prettierd", "prettier",                stop_after_first = true },
         typescript       = { "prettierd", "prettier", "js_beautify", stop_after_first = true },
         ruby             = { "rubocop"},
@@ -79,4 +79,17 @@ return {
       flags = { "-p"},
     },
   },
+  --{
+  --  "rest-nvim/rest.nvim",
+  --  build = false,
+  --  dependencies = {
+  --    {
+  --      "nvim-treesitter/nvim-treesitter",
+  --      opts = function(_, opts)
+  --        opts.ensure_installed = opts.ensure_installed or {}
+  --       table.insert(opts.ensure_installed, "http")
+  --      end,
+  --    },
+  --  },
+  --}
 }
