@@ -962,7 +962,7 @@ require('lazy').setup({
   { -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
-    main = 'nvim-treesitter.configs', -- Sets main module to use for opts
+    main = 'nvim-treesitter', -- Sets main module to use for opts
     init = function()
         vim.opt.foldmethod = 'expr'
         vim.opt.foldexpr = (vim.fn.has('nvim-0.10') == 1)
