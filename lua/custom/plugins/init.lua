@@ -49,6 +49,7 @@ return {
         sh = { 'shfmt' },
         sql = { 'sql-formatter', 'pg_format', stop_after_first = true },
         csv = { 'prettier' },
+        xml = { 'xmlformatter' },
         -- add more as needed...
       },
       -- automatically format on save (with a 500 ms timeout)
